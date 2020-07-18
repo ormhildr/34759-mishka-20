@@ -23,23 +23,17 @@
                     <li class="site-list__item">
                         <a href="form.html">Вязание на заказ</a>
                     </li>
-                </ul>
-                <div class="main-nav__list search-list">
-                    <a class="search-list__link" href="">Поиск по сайту</a>
-                    <form class="search-list__form" action="#" method="POST">
-                        <input type="search" name="search" id="search-input">
-                        <label class="visually-hidden" for="search-input">Поле поиска</label>
-                    </form>
-                </div>
-                <ul class="main-nav__list user-list">
-                    <li class="user-list__item">
+                    <li class="site-list__item">
+                        <a href="">Поиск по сайту</a>
+                    </li>
+                    <li class="site-list__item">
                         <a href="">Корзина: пока пуста</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="page-header__bottom">
-            <h1 class="page-header__title index-title">Милые штуки ручной работы для дома</h1>
+            <h1 class="page-title page-header__title">Милые штуки ручной работы для дома</h1>
             <section class="articles-menu">
                 <h2 class="visually-hidden">Меню товаров</h2>
                 <ul class="articles-menu__list">
@@ -55,26 +49,21 @@
     </header>
 
     <main class="page-main page-index">
-        <section class="stocks">
-            <h2 class="visually-hidden">Акции магазина</h2>
-            <ul class="stocks__list">
-                <li class="stocks__item stocks__item--baskets">
-                    <h2 class="stocks__title">Вязаные корзинки</h2>
-                    <p class="stocks__subtitle">Товар недели</p>
-                    <p class="stocks__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-                    <dl class="stocks__parameters stocks-parameters">
-                        <dt class="stocks-parameters__title">Цвет:</dt>
-                        <dd class="stocks-parameters__descr">«Тиффани»/серый</dd>
-                        <dt class="stocks-parameters__title">Диаметр:</dt>
-                        <dd class="stocks-parameters__descr">25 см</dd>
-                        <dt class="stocks-parameters__title">Высота:</dt>
-                        <dd class="stocks-parameters__descr">15 см</dd>
-                    </dl>
-                    <img class="stocks__img" src="https://via.placeholder.com/150x150" alt="Вязаные корзинки">
-                    <p class="stocks__price">Цена: 990 руб.</p>
-                    <a class="button stocks__button" href="">Заказать</a>
-                </li>
-            </ul>
+        <section class="promo">
+            <h2 class="promo__title">Вязаные корзинки</h2>
+            <p class="promo__subtitle">Товар недели</p>
+            <p class="promo__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <dl class="promo__parameters promo-parameters">
+                <dt class="promo-parameters__title">Цвет:</dt>
+                <dd class="promo-parameters__descr">«Тиффани»/серый</dd>
+                <dt class="promo-parameters__title">Диаметр:</dt>
+                <dd class="promo-parameters__descr">25 см</dd>
+                <dt class="promo-parameters__title">Высота:</dt>
+                <dd class="promo-parameters__descr">15 см</dd>
+            </dl>
+            <img class="promo__img" src="https://via.placeholder.com/150x150" alt="Вязаные корзинки">
+            <p class="promo__price">Цена: 990 руб.</p>
+            <a class="button promo__button" href="">Заказать</a>
         </section>
         <section class="advantages">
             <h2 class="advantages__title">Коротко о нас:</h2>
@@ -92,17 +81,23 @@
             <div class="reviews__wrapper slider">
                 <ul class="reviews__list slider__list">
                     <li class="reviews__item reviews-item slider__item">
-                        <p class="reviews-item__descr">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-                            больше лайков!</p>
-                        <div class="reviews-item__author author">
-                            <p class="author__name">Анастасия Красильникова</p>
-                            <p class="author__nickname">@misssssiskras</p>
-                        </div>
+                        <blockquote class="reviews-item__quote">
+                            <p class="reviews-item__descr">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также
+                                набирают больше лайков!</p>
+                            <div class="reviews-item__author author">
+                                <p class="author__name">
+                                    <cite>Анастасия Красильникова</cite>
+                                </p>
+                                <p class="author__nickname">
+                                    <cite>@misssssiskras</cite>
+                                </p>
+                            </div>
+                        </blockquote>
                     </li>
                 </ul>
-                <div class="reviews__toggles slider__toggles">
-                    <button class="slider__toggle toggle-prev" type="button">Предыдущий слайд</button>
-                    <button class="slider__toggle toggle-next" type="button">Следующий слайд</button>
+                <div class="reviews__controls slider__controls">
+                    <button class="slider__control control-prev" type="button">Предыдущий слайд</button>
+                    <button class="slider__control control-next" type="button">Следующий слайд</button>
                 </div>
             </div>
             <a class="button reviews__button" href="">Написать</a>
@@ -115,11 +110,10 @@
                     <a class="contacts-address__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
                 </dd>
                 <dt class="contacts-address__title">адрес:</dt>
-                <dd class="contacts-address__descr contacts-address__descr--address">Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+                <dd class="contacts-address__descr contacts-address__descr--address">
+                    <address>Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</address>
+                </dd>
             </dl>
-            <div class="contacts__map map">
-                <img class="map__img" src="https://via.placeholder.com/150x150" alt="Карта с адресом магазина">
-            </div>
             <a class="button contacts__button" href="">Нaпишите нам</a>
         </section>
     </main>
@@ -141,6 +135,23 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
     </footer>
+
+    <section class="modal modal-cart">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__descr">Выберите размер:</p>
+        <ul class="modal__list modal-cart__sizes sizes">
+            <li class="modal__item modal__item--s">
+                <button class="sizes__button" type="button" aria-label="Размер S">S</button>
+            </li>
+            <li class="modal__item modal__item--m">
+                <button class="sizes__button" type="button" aria-label="Размер M">M</button>
+            </li>
+            <li class="modal__item modal__item--l">
+                <button class="sizes__button" type="button" aria-label="Размер L">L</button>
+            </li>
+        </ul>
+        <a class="modal-cart__button" href="">Добавить</a>
+    </section>
 
 </body>
 

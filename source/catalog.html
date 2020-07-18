@@ -10,7 +10,7 @@
 <body class="page__body">
 
     <header class="page-header">
-        <a href="index.html" class="page-header__logo">
+        <a href="index.html" class="page-header__logo" aria-label="На главную страницу">
             <img src="https://via.placeholder.com/150x150" alt="Интернет-магазин «Мишка»">
         </a>
         <nav class="main-nav">
@@ -18,32 +18,25 @@
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
-                        <a>Каталог товаров</a>
+                        <a href="catalog.html">Каталог товаров</a>
                     </li>
                     <li class="site-list__item">
                         <a href="form.html">Вязание на заказ</a>
                     </li>
-                </ul>
-                <div class="main-nav__list search-list">
-                    <a class="search-list__link" href="">Поиск по сайту</a>
-                    <form class="search-list__form" action="#" method="POST">
-                        <input type="search" name="search" id="search-input">
-                        <label class="visually-hidden" for="search-input">Поле поиска</label>
-                    </form>
-                </div>
-                <ul class="main-nav__list user-list">
-                    <li class="user-list__item">
+                    <li class="site-list__item">
+                        <a href="">Поиск по сайту</a>
+                    </li>
+                    <li class="site-list__item">
                         <a href="">Корзина: пока пуста</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <h1 class="page-header__title">Каталог товаров</h1>
     </header>
 
     <main class="page-main page-catalog">
-        <section class="page-catalog catalog">
-            <h2 class="visually-hidden">Каталог</h2>
+        <section class="catalog">
+            <h1 class="page-title catalog__title">Каталог товаров</h1>
             <ul class="catalog__list">
                 <li class="catalog__item catalog-item">
                     <a class="catalog-item__img" href="">
@@ -94,7 +87,7 @@
         </section>
         <section class="preview">
             <h2 class="preview__title">Процесс производства</h2>
-            <img class="preview__img" src="https://via.placeholder.com/150x150" alt="Превью видео с процессом производства">
+            <video poster="https://via.placeholder.com/150x150"></video>
             <p class="preview__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="button preview__button" href="">Сделать заказ</a>
         </section>
@@ -117,6 +110,23 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
     </footer>
+
+    <section class="modal modal-cart">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__descr">Выберите размер:</p>
+        <ul class="modal__list modal-cart__sizes sizes">
+            <li class="modal__item modal__item--s">
+                <button class="sizes__button" type="button" aria-label="Размер S">S</button>
+            </li>
+            <li class="modal__item modal__item--m">
+                <button class="sizes__button" type="button" aria-label="Размер M">M</button>
+            </li>
+            <li class="modal__item modal__item--l">
+                <button class="sizes__button" type="button" aria-label="Размер L">L</button>
+            </li>
+        </ul>
+        <a class="modal-cart__button" href="">Добавить</a>
+    </section>
 
 </body>
 
