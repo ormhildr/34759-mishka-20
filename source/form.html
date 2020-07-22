@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка - Форма заказа</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
     <header class="page-header">
         <a href="index.html" class="page-header__logo" aria-label="На главную страницу">
-            <img src="https://via.placeholder.com/150x150" alt="Интернет-магазин «Мишка»">
+            <img src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -116,20 +117,32 @@
     </main>
 
     <footer class="page-footer">
-        <ul class="page-footer__social social social__list">
-            <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">Мы в Твиттере</a>
-            </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+        <div class="container">
+            <ul class="page-footer__social social social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank" aria-label="Instagram">
+                        <img src="img/icon-insta.svg" alt="Мы в Инстаграме">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Facebook">
+                        <img src="img/icon-fb.svg" alt="Мы в Фейсбуке">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank" aria-label="Twitter">
+                        <img src="img/icon-twitter.svg" alt="Мы в Твиттере">
+                    </a>
+                </li>
+            </ul>
+            <div class="page-footer__copyright copyright">
+                <p class="copyright__text">Разработано</p>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="HTML Academy">
+                    <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип HTML Academy">
+                      <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="#63D1BB"/>
+                  </svg>
+                </a>
+            </div>
         </div>
     </footer>
 
