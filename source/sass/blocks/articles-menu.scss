@@ -1,0 +1,38 @@
+.articles-menu {
+  padding-top: 73px;
+  background-color: $general-title-bgcolor;
+}
+
+.articles-menu__title {
+  margin-bottom: 120px;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $page-title-color;
+  text-align: center;
+}
+
+.articles-menu__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.articles-menu__item {
+  flex-grow: 1;
+}
+
+.articles-menu__item--decor {
+  background-color: $articles-menu-decor;
+}
+
+.articles-menu__item--toys {
+  background-color: $articles-menu-toys;
+}
+
+.articles-menu__link {
+  display: block;
+  padding: 24px 160px 31px 30px;
+  font-weight: bold;
+  font-size: 19px;
+  color: $bgcolor-white;
+}

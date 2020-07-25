@@ -1,0 +1,19 @@
+.promo-parameters__wrapper {
+  display: flex;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid $box-shadow-nav;
+}
+
+.promo-parameters__item {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.promo-parameters__title {
+  flex-basis: 97px;
+}
+
+.promo-parameters__descr {
+  margin: 0;
+}

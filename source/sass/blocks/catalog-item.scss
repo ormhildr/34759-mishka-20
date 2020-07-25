@@ -1,0 +1,35 @@
+.catalog-item__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 28px;
+  border: 1px solid $box-shadow-nav;
+}
+.catalog-item__title {
+  margin-bottom: 6px;
+}
+
+.catalog-item__descr {
+  margin: 0;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.catalog-item__img {
+  display: block;
+}
+
+.catalog-item__price {
+  margin: 0;
+  font-size: 15px;
+}
+
+.catalog-item__top {
+  padding-bottom: 17px;
+  border-bottom: 1px solid $box-shadow-nav;
+}
+
+.catalog-item__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+}
