@@ -1,0 +1,23 @@
+.page-footer {
+  padding-top: 25px;
+  padding-bottom: 18px;
+  background-color: $general-title-bgcolor;
+}
+
+.page-footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 141px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  padding-top: 22px;
+  padding-right: 39px;
+  padding-left: 39px;
+  box-shadow: inset 0 1px 0 $box-shadow-footer;
+}
