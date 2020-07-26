@@ -15,7 +15,7 @@
       <img src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="button main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list list">
           <li class="main-nav__item">
@@ -37,7 +37,7 @@
 
   <main class="page-main page-index">
     <section class="articles-menu">
-      <h1 class="articles-menu__title container">Милые штуки ручной работы для дома</h1>
+      <h1 class="articles-menu__title container">Милые штуки ручной <br> работы для дома</h1>
       <ul class="articles-menu__list list">
         <li class="articles-menu__item articles-menu__item--decor">
           <a class="articles-menu__link" href="">Предметы интерьера</a>
@@ -68,7 +68,7 @@
       </dl>
       <img class="promo__img" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
       <p class="promo__price">Цена: 990 руб.</p>
-      <a class="button promo__button" href="">Заказать</a>
+      <a class="site-button promo__button" href="">Заказать</a>
     </section>
     <section class="advantages container">
       <h2 class="advantages__title site-title">Коротко о нас:</h2>
@@ -81,42 +81,56 @@
         <li class="advantages__item">Поставляется в <br> подарочной упаковке</li>
       </ul>
     </section>
-    <section class="reviews">
+    <section class="reviews container">
       <h2 class="reviews__title site-title">Отзывы</h2>
       <div class="reviews__wrapper slider">
         <ul class="reviews__list slider__list list">
           <li class="reviews__item reviews-item slider__item">
-            <blockquote class="reviews-item__quote">Я молодая мама, но всё равно фотографии не набирали и близко такого
-              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
-              мои фотографии сразу стали более стильными, а также набирают больше
-              лайков!
-              <div class="reviews-item__author author">
-                <cite class="author__name">Анастасия Красильникова</cite>
-                <cite class="author__nickname">@misssssiskras</cite>
+            <blockquote class="reviews-item__quote">
+              <p class="reviews-item__descr">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого
+                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и
+                мои фотографии сразу стали более стильными, а также набирают больше
+                лайков!
+              </p>
+              <div class="reviews-item__author">
+                <cite class="reviews-item__name">Анастасия Красильникова</cite>
+                <cite class="reviews-item__nickname">@misssssiskras</cite>
               </div>
             </blockquote>
           </li>
         </ul>
         <div class="reviews__controls slider__controls">
-          <button class="slider__control control-prev" type="button">Предыдущий слайд</button>
-          <button class="slider__control control-next" type="button">Следующий слайд</button>
+          <button class="button slider__control slider__control--prev" type="button"
+            aria-label="Предыдущий слайд">Предыдущий слайд</button>
+          <button class="button slider__control slider__control--next" type="button"
+            aria-label="Следующий слайд">Следующий слайд</button>
         </div>
       </div>
-      <a class="button reviews__button" href="">Написать</a>
+      <a class="site-button reviews__button" href="">Написать</a>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <dl class="contacts__address contacts-address">
-        <dt class="contacts-address__title">e-mail:</dt>
-        <dd class="contacts-address__descr contacts-address__descr--mail">
-          <a class="contacts-address__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </dd>
-        <dt class="contacts-address__title">адрес:</dt>
-        <dd class="contacts-address__descr contacts-address__descr--address">
-          <address>Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</address>
-        </dd>
+      <h2 class="contacts__title container">Контакты</h2>
+      <dl class="contacts__address contacts-address container">
+        <div class="contacts-address__wrapper">
+          <dt class="contacts-address__title">e-mail:</dt>
+          <dd class="contacts-address__descr contacts-address__descr--mail">
+            <a class="contacts-address__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </dd>
+        </div>
+        <div class="contacts-address__wrapper">
+          <dt class="contacts-address__title">адрес:</dt>
+          <dd class="contacts-address__descr contacts-address__descr--address">
+            <address class="contacts-address__info">Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101
+            </address>
+          </dd>
+        </div>
       </dl>
-      <a class="button contacts__button" href="">Нaпишите нам</a>
+      <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCQdnHs4SD" height="457" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </iframe>
+      <a class="site-button contacts__button container" href="">Нaпишите нам</a>
     </section>
   </main>
 
@@ -152,16 +166,16 @@
               d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
               fill="#63D1BB" />
           </svg>
-
         </a>
       </div>
     </div>
   </footer>
 
   <section class="modal">
-    <form class="modal__form modal-cart" action="https://echo.htmlacademy.ru" method="POST">
+    <h2 class="visually-hidden">Форма добавления товара в корзину</h2>
+    <form class="modal__form modal-cart container" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="modal-cart__cart">
-        <legend class="modal-cart__title">Добавить в корзину</legend>
+        <legend class="modal-cart__title site-title">Добавить в корзину</legend>
         <p class="modal-cart__descr">Выберите размер:</p>
         <ul class="modal-cart__list list">
           <li class="modal-cart__item">
@@ -178,7 +192,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="modal-cart__button" type="submit">Добавить</button>
+      <button class="site-button modal-cart__button" type="submit">Добавить</button>
     </form>
   </section>
 

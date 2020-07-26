@@ -15,7 +15,7 @@
       <img src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="button main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list list">
           <li class="main-nav__item">
@@ -87,12 +87,12 @@
         </li>
       </ul>
     </section>
-    <section class="preview">
-      <h2 class="preview__title">Процесс производства</h2>
-      <video poster="https://via.placeholder.com/150x150"></video>
+    <section class="preview container">
+      <h2 class="preview__title main-links">Процесс производства</h2>
+      <video class="preview__video" height="150" poster="img/video-mobile@1x.jpg"></video>
       <p class="preview__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
-      <a class="button preview__button" href="">Сделать заказ</a>
+      <a class="site-button preview__button" href="">Сделать заказ</a>
     </section>
   </main>
 
@@ -134,9 +134,10 @@
   </footer>
 
   <section class="modal">
-    <form class="modal__form modal-cart" action="https://echo.htmlacademy.ru" method="POST">
+    <h2 class="visually-hidden">Форма добавления товара в корзину</h2>
+    <form class="modal__form modal-cart container" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="modal-cart__cart">
-        <legend class="modal-cart__title">Добавить в корзину</legend>
+        <legend class="modal-cart__title site-title">Добавить в корзину</legend>
         <p class="modal-cart__descr">Выберите размер:</p>
         <ul class="modal-cart__list list">
           <li class="modal-cart__item">
@@ -153,7 +154,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="modal-cart__button" type="submit">Добавить</button>
+      <button class="site-button modal-cart__button" type="submit">Добавить</button>
     </form>
   </section>
 

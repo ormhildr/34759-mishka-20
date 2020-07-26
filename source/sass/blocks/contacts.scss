@@ -1,0 +1,23 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 38px;
+  padding-bottom: 39px;
+  line-height: 30px;
+}
+
+.contacts__title {
+  margin-bottom: 27px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__map {
+  margin-bottom: 39px;
+  border: none;
+}

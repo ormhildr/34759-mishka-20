@@ -1,0 +1,12 @@
+.slider__controls {
+  display: flex;
+}
+
+.slider__control {
+  background-color: $bgcolor-white;
+  border: 1px solid $box-shadow-nav;
+
+  &--prev {
+    border-right: none;
+  }
+}
