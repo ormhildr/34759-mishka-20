@@ -1,0 +1,25 @@
+.reviews-item__quote {
+  margin: 0;
+}
+
+.reviews-item__descr {
+  margin: 0;
+  margin-bottom: 33px;
+  line-height: 30px;
+}
+
+.reviews-item__author {
+  margin-bottom: 30px;
+}
+
+.reviews-item__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: $page-title-color;
+}
+
+.reviews-item__nickname {
+  font-style: normal;
+  font-size: 17px;
+}

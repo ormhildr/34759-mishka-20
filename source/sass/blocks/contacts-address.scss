@@ -1,0 +1,28 @@
+.contacts-address {
+  margin-bottom: 33px;
+}
+
+.contacts-address__wrapper {
+  display: flex;
+}
+
+.contacts-address__wrapper:first-child {
+  margin-bottom: 30px;
+}
+
+.contacts-address__title {
+  flex-basis: 76px;
+}
+
+.contacts-address__descr {
+  margin: 0;
+}
+
+.contacts-address__link {
+  color: $text-color;
+  border-bottom: 1px solid $articles-menu-decor;
+}
+
+.contacts-address__info {
+  font-style: normal;
+}

@@ -1,10 +1,13 @@
-.button {
+.site-button {
+  display: block;
   padding-top: 16px;
   padding-bottom: 16px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $text-color;
+  background-color: $bgcolor-white;
   border: 2px solid $text-color;
   text-align: center;
+  text-transform: uppercase;
 }

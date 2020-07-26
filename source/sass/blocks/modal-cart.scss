@@ -1,0 +1,39 @@
+.modal-cart {
+  display: flex;
+  flex-direction: column;
+  padding-top: 29px;
+  padding-bottom: 46px;
+}
+
+.modal-cart__cart {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.modal-cart__title {
+  width: 163px;
+  margin-bottom: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-cart__descr {
+  margin: 0;
+  margin-bottom: 21px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-cart__list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 31px;
+}
+
+.modal-cart__button {
+  line-height: 16px;
+  color: $bgcolor-white;
+  background-color: $articles-menu-decor;
+  border: none;
+}
