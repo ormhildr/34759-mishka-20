@@ -1,0 +1,34 @@
+.slider__controls {
+  display: flex;
+}
+
+.slider__control {
+  position: relative;
+  width: 50%;
+  height: 52px;
+  background-color: $bgcolor-white;
+  border: 1px solid $box-shadow-nav;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 26px;
+    left: 40px;
+    top: 13px;
+  }
+
+  &--prev {
+    border-right: none;
+
+    &::after {
+      background-image: url("../img/icon-left-arrow.svg");
+    }
+  }
+
+  &--next {
+    &::after {
+      background-image: url("../img/icon-right-arrow.svg");
+    }
+  }
+}

@@ -8,10 +8,22 @@
   overflow: hidden;
 }
 
+.button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
 .list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .container {

@@ -1,5 +1,9 @@
 .articles-menu {
   padding-top: 73px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-position-y: -16px;
   background-color: $general-title-bgcolor;
 }
 
@@ -19,14 +23,14 @@
 
 .articles-menu__item {
   flex-grow: 1;
-}
 
-.articles-menu__item--decor {
-  background-color: $articles-menu-decor;
-}
+  &--decor {
+    background-color: $articles-menu-decor;
+  }
 
-.articles-menu__item--toys {
-  background-color: $articles-menu-toys;
+  &--toys {
+    background-color: $articles-menu-toys;
+  }
 }
 
 .articles-menu__link {
