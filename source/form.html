@@ -40,7 +40,7 @@
     <form class="form container" action="https://echo.htmlacademy.ru" method="POST">
       <p class="form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
-      <fieldset class="form__fieldset form__fieldset--filter form__fieldset--type">
+      <fieldset class="fieldset form__fieldset form__fieldset--filter form__fieldset--type">
         <legend class="form__legend">Тип</legend>
         <ul class="form__list radiolist list">
           <li class="radiolist__item">
@@ -53,7 +53,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--filter form__fieldset--color">
+      <fieldset class="fieldset form__fieldset form__fieldset--filter form__fieldset--color">
         <legend class="form__legend">Цвет</legend>
         <ul class="form__list checkbox list">
           <li class="checkbox__item">
@@ -84,17 +84,17 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--name">
+      <fieldset class="fieldset form__fieldset form__fieldset--name">
         <legend class="form__legend">ФИО</legend>
         <p class="form__data form__data-name form__name">
           <label class="form__label label-name" for="name">Имя:</label>
           <input class="form__input input-name form__input-data" id="name" type="text" name="name"
-            placeholder="Введите ваше имя*" inputmode="text">
+            placeholder="Введите ваше имя*" inputmode="text" required>
         </p>
         <p class="form__data form__data-name form__surname">
           <label class="form__label label-name" for="surname">Фамилия:</label>
           <input class="form__input input-name form__input-data" id="surname" type="text" name="surname"
-            placeholder="Укажите фамилию*" inputmode="text">
+            placeholder="Укажите фамилию*" inputmode="text" required>
         </p>
         <p class="form__data form__data-name form__patronymic">
           <label class="form__label label-name" for="patronymic">Отчество:</label>
@@ -102,19 +102,19 @@
             placeholder="Отчество, если желаете" inputmode="text">
         </p>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--contacts form__fieldset--phone">
+      <fieldset class="fieldset form__fieldset form__fieldset--contacts form__fieldset--phone">
         <legend class="form__legend">Тел</legend>
         <label class="visually-hidden form__label label-phone" for="phone">Номер телефона:</label>
         <input class="form__input input-phone form__input-data" id="phone" type="tel" name="phone"
-          placeholder="+7 ХХХ ХХХ ХХ ХХ*" inputmode="tel">
+          placeholder="+7 ХХХ ХХХ ХХ ХХ*" inputmode="tel" required>
       </fieldset>
-      <fieldset class="form__fieldset  form__fieldset--contacts form__fieldset--mail">
+      <fieldset class="fieldset form__fieldset  form__fieldset--contacts form__fieldset--mail">
         <legend class="form__legend">E-mail</legend>
         <label class="visually-hidden form__label label-mail" for="mail">Адрес электронной почты:</label>
         <input class="form__input input-mail form__input-data" id="mail" type="email" name="mail"
-          placeholder="Ваш Email*" inputmode="email">
+          placeholder="Ваш Email*" inputmode="email" required>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--message">
+      <fieldset class="fieldset form__fieldset form__fieldset--message">
         <legend class="form__legend">Доп</legend>
         <label class="visually-hidden form__label label-message" for="message">Введите сообщение:</label>
         <textarea class="form__textarea textarea-message" id="message" name="message"
