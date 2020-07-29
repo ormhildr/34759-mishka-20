@@ -11,12 +11,14 @@
 <body class="page__body">
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
-    </a>
     <nav class="main-nav">
-      <button class="button main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__top">
+        <a class="main-nav__logo">
+          <img class="main-nav__img" src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
+        </a>
+        <button class="button main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <div class="main-nav__bottom">
         <ul class="main-nav__list list">
           <li class="main-nav__item">
             <a class="main-nav__link main-links container" href="catalog.html">Каталог товаров</a>
@@ -48,27 +50,32 @@
       </ul>
     </section>
     <section class="promo container">
-      <h2 class="promo__title site-title">Вязаные корзинки</h2>
-      <p class="promo__subtitle">Товар недели</p>
-      <p class="promo__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-      </p>
-      <dl class="promo__parameters promo-parameters">
-        <div class="promo-parameters__wrapper">
-          <dt class="promo-parameters__title promo-parameters__item">Цвет:</dt>
-          <dd class="promo-parameters__descr promo-parameters__item">«Тиффани»/серый</dd>
-        </div>
-        <div class="promo-parameters__wrapper">
-          <dt class="promo-parameters__title promo-parameters__item">Диаметр:</dt>
-          <dd class="promo-parameters__descr promo-parameters__item">25 см</dd>
-        </div>
-        <div class="promo-parameters__wrapper">
-          <dt class="promo-parameters__title promo-parameters__item">Высота:</dt>
-          <dd class="promo-parameters__descr promo-parameters__item">15 см</dd>
-        </div>
-      </dl>
-      <img class="promo__img" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
-      <p class="promo__price">Цена: 990 руб.</p>
-      <a class="site-button promo__button" href="">Заказать</a>
+      <div class="promo__title-wrapper">
+        <h2 class="promo__title site-title">Вязаные корзинки</h2>
+        <p class="promo__subtitle">Товар недели</p>
+      </div>
+      <div class="promo__content-wrapper">
+        <p class="promo__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+          размерах.
+        </p>
+        <dl class="promo__parameters promo-parameters">
+          <div class="promo-parameters__wrapper">
+            <dt class="promo-parameters__title promo-parameters__item">Цвет:</dt>
+            <dd class="promo-parameters__descr promo-parameters__item">«Тиффани»/серый</dd>
+          </div>
+          <div class="promo-parameters__wrapper">
+            <dt class="promo-parameters__title promo-parameters__item">Диаметр:</dt>
+            <dd class="promo-parameters__descr promo-parameters__item">25 см</dd>
+          </div>
+          <div class="promo-parameters__wrapper">
+            <dt class="promo-parameters__title promo-parameters__item">Высота:</dt>
+            <dd class="promo-parameters__descr promo-parameters__item">15 см</dd>
+          </div>
+        </dl>
+        <img class="promo__img" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+        <p class="promo__price">Цена: 990 руб.</p>
+        <a class="site-button promo__button" href="">Заказать</a>
+      </div>
     </section>
     <section class="advantages container">
       <h2 class="advantages__title site-title">Коротко о нас:</h2>

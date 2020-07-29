@@ -16,3 +16,18 @@
   padding-bottom: 27px;
   padding-left: 46px;
 }
+
+.main-nav__top {
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  box-shadow: 0 1px 0 $box-shadow-nav, inset 0 1px 0 $box-shadow-nav;
+}
+
+.main-nav__logo {
+  margin: 0 auto;
+}
+
+.main-nav__img {
+  vertical-align: middle;
+}

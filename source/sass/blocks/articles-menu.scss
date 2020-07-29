@@ -14,15 +14,34 @@
   line-height: 30px;
   color: $page-title-color;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .articles-menu__list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0 50px;
+  }
 }
 
 .articles-menu__item {
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 
   &--decor {
     background-color: $articles-menu-decor;
@@ -35,8 +54,18 @@
 
 .articles-menu__link {
   display: block;
-  padding: 24px 160px 31px 30px;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 30px;
+  max-width: 140px;
   font-weight: bold;
   font-size: 19px;
   color: $bgcolor-white;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 34px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

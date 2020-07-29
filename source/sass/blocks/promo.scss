@@ -1,44 +1,129 @@
 .promo {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   padding-top: 31px;
-  padding-bottom: 42px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 73px;
+    padding-left: 32px;
+  }
 }
 
 .promo__title {
   margin: 0;
-  margin-bottom: 3px;
+  padding-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .promo__subtitle {
   margin: 0;
-  margin-bottom: 17px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $articles-menu-decor;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: min-content;
+    padding-right: 15px;
+    text-align: center;
+    align-self: center;
+    line-height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 72px;
+  }
 }
 
 .promo__descr {
   margin: 0;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .promo__parameters {
   margin: 0;
   margin-bottom: 28px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .promo__img {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 0;
+    top: 164px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 80%;
+    top: auto;
+    bottom: 73px;
+    z-index: -1;
+  }
 }
 
 .promo__price {
   margin: 0;
   margin-bottom: 25px;
-  align-self: center;
+  text-align: center;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+    font-size: 20px;
+  }
+}
+
+.promo__title-wrapper {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-top: 61px;
+  }
+}
+
+
+.promo__content-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 292px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 126px;
+  }
 }
