@@ -6,6 +6,10 @@
   margin: 0;
   margin-bottom: 33px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .reviews-item__author {
@@ -13,6 +17,7 @@
 }
 
 .reviews-item__name {
+  display: block;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;

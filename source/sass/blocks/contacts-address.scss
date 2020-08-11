@@ -1,5 +1,13 @@
 .contacts-address {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
 }
 
 .contacts-address__wrapper {
@@ -12,6 +20,14 @@
 
 .contacts-address__title {
   flex-basis: 76px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .contacts-address__descr {
@@ -25,4 +41,14 @@
 
 .contacts-address__info {
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    margin-left: 174px;
+  }
 }

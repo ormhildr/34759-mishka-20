@@ -1,0 +1,9 @@
+.articles-subpage {
+  padding-bottom: 73px;
+}
+
+.articles-subpage__title {
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+  }
+}

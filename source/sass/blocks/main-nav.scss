@@ -1,31 +1,157 @@
+.main-nav {
+  border-top: $border-nav;
+  border-bottom: $border-nav;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 32px;
   right: 35px;
   width: 20px;
   height: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  &--third {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--first {
+      position: absolute;
+      top: 112px;
+      left: 50px;
+      display: flex;
+    }
+
+    &--second {
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--first {
+      position: static;
+    }
+
+    &--second {
+      order: 1;
+    }
+
+    &--third {
+      position: absolute;
+      top: 112px;
+      left: 50px;
+      display: flex;
+    }
+  }
 }
 
 .main-nav__item {
   box-shadow: inset 0 1px 0 $box-shadow-nav;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 1px 0 0 $box-shadow-nav;
+
+    &--search {
+      width: 83px;
+    }
+
+    &--cart {
+      flex-grow: 1;
+    }
+
+    &--first {
+      box-shadow: none;
+    }
+
+    &--first:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--first {
+      width: 234px;
+      box-shadow: inset 1px 0 0 #ececec;
+    }
+
+    &--first:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &--third {
+      box-shadow: none;
+    }
+
+    &--third:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
 }
 
 .main-nav__link {
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
-  padding-left: 46px;
+  padding-left: 79px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+    padding-bottom: 33px;
+
+    &--first {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--first {
+      padding-top: 32px;
+      padding-bottom: 33px;
+      padding-left: 50px;
+    }
+
+    &--third {
+      padding: 0;
+    }
+  }
 }
 
 .main-nav__top {
   display: flex;
   padding-top: 22px;
   padding-bottom: 22px;
-  box-shadow: 0 1px 0 $box-shadow-nav, inset 0 1px 0 $box-shadow-nav;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    width: 370px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
+    order: 1;
+  }
 }
 
 .main-nav__logo {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 50px;
+  }
 }
 
 .main-nav__img {

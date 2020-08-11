@@ -2,6 +2,11 @@
   padding-top: 25px;
   padding-bottom: 18px;
   background-color: $general-title-bgcolor;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
 }
 
 .page-footer__social {
@@ -11,6 +16,12 @@
   width: 141px;
   margin: 0 auto;
   margin-bottom: 25px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-end;
+    margin: 0;
+  }
 }
 
 .page-footer__copyright {
@@ -20,4 +31,26 @@
   padding-right: 39px;
   padding-left: 39px;
   box-shadow: inset 0 1px 0 $box-shadow-footer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 102px;
+    margin-right: 66px;
+  }
+}
+
+.page-footer__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

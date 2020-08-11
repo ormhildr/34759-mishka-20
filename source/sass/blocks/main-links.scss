@@ -3,4 +3,24 @@
   font-size: 17px;
   line-height: 24px;
   color: $page-title-color;
+
+  @media (min-width: $tablet-width) {
+    &--search {
+      display: none;
+    }
+
+    &--first {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--first {
+      font-size: inherit;
+    }
+
+    &--third {
+      font-size: 15px;
+    }
+  }
 }

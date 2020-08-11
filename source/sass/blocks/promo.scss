@@ -11,7 +11,6 @@
   @media (min-width: $desktop-width) {
     padding-top: 71px;
     padding-bottom: 73px;
-    padding-left: 32px;
   }
 }
 
@@ -41,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 72px;
+    padding-right: 43px;
   }
 }
 
@@ -114,6 +113,7 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     padding-top: 61px;
+    padding-left: 53px;
   }
 }
 
@@ -121,9 +121,5 @@
 .promo__content-wrapper {
   @media (min-width: $tablet-width) {
     width: 292px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 126px;
   }
 }
