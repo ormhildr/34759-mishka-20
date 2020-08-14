@@ -119,24 +119,32 @@
       </fieldset>
       <fieldset class="fieldset form__fieldset form__fieldset--contacts form__fieldset--phone">
         <legend class="form__legend">Тел</legend>
-        <label class="visually-hidden form__label label-phone" for="phone">Номер телефона:</label>
-        <input class="form__input input-phone form__input-data" id="phone" type="tel" name="phone"
-          placeholder="+7 ХХХ ХХХ ХХ ХХ*" inputmode="tel" required>
+        <p class="form__data">
+          <label class="visually-hidden form__label label-phone" for="phone">Номер телефона:</label>
+          <input class="form__input input-phone form__input-data" id="phone" type="tel" name="phone"
+            placeholder="+7 ХХХ ХХХ ХХ ХХ*" inputmode="tel" required>
+        </p>
       </fieldset>
       <fieldset class="fieldset form__fieldset  form__fieldset--contacts form__fieldset--mail">
         <legend class="form__legend">E-mail</legend>
-        <label class="visually-hidden form__label label-mail" for="mail">Адрес электронной почты:</label>
-        <input class="form__input input-mail form__input-data" id="mail" type="email" name="mail"
-          placeholder="Ваш Email*" inputmode="email" required>
+        <p class="form__data">
+          <label class="visually-hidden form__label label-mail" for="mail">Адрес электронной почты:</label>
+          <input class="form__input input-mail form__input-data" id="mail" type="email" name="mail"
+            placeholder="Ваш Email*" inputmode="email" required>
+        </p>
       </fieldset>
       <fieldset class="fieldset form__fieldset form__fieldset--message">
         <legend class="form__legend">Доп</legend>
-        <label class="visually-hidden form__label label-message" for="message">Введите сообщение:</label>
-        <textarea class="form__textarea textarea-message" id="message" name="message"
-          placeholder="Опишите все ваши пожелания к заказу" inputmode="text"></textarea>
+        <p class="form__data">
+          <label class="visually-hidden form__label label-message" for="message">Введите сообщение:</label>
+          <textarea class="form__textarea textarea-message" id="message" name="message"
+            placeholder="Опишите все ваши пожелания к заказу" inputmode="text"></textarea>
+        </p>
       </fieldset>
-      <p class="form__note">*Поля обязательны для заполнения</p>
-      <button class="button site-button form__button" type="submit">Отправить заказ</button>
+      <div class="form__bottom-inner">
+        <p class="form__note">*Поля обязательны для заполнения</p>
+        <button class="button site-button form__button" type="submit">Отправить заказ</button>
+      </div>
     </form>
   </main>
 

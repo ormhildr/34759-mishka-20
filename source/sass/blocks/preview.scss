@@ -5,16 +5,38 @@
   padding-top: 22px;
   padding-bottom: 33px;
   border: 1px solid $box-shadow-nav;
+
+  @media (min-width: $desktop-width) {
+    width: 367px;
+    margin-left: auto;
+    padding-top: 96px;
+    padding-right: 46px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+  }
 }
 
 .preview__title {
   margin: 0;
   margin-bottom: 27px;
   padding-left: 91px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .preview__video {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+  }
 }
 
 .preview__descr {
@@ -22,9 +44,22 @@
   margin-bottom: 41px;
   padding-left: 34px;
   font-size: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .preview__button {
-  margin-left: 34px;
   margin-right: 34px;
+  margin-left: 34px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }

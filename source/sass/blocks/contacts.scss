@@ -69,7 +69,8 @@
 
 .contacts__button {
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: max-content;
+    margin: 0 auto;
     padding-right: 27px;
     padding-left: 27px;
   }
