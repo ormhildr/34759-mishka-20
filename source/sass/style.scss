@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./mixins.scss";
 @import "./fonts.scss";
 @import "../../node_modules/normalize-scss/sass/normalize";
 @include normalize();
@@ -6,12 +7,14 @@
 @import "./common.scss";
 @import "./blocks/modal.scss";
 @import "./blocks/page.scss";
-@import "./blocks/page-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/page-title.scss";
-@import "./blocks/articles-menu.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/articles.scss";
+@import "./blocks/articles-main.scss";
+@import "./blocks/articles-subpage.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/promo-parameters.scss";
 @import "./blocks/site-button.scss";
@@ -30,3 +33,4 @@
 @import "./blocks/radiolist.scss";
 @import "./blocks/checkbox.scss";
 @import "./blocks/modal-cart.scss";
+@import "./blocks/content-wrapper.scss";

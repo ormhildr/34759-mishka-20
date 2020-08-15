@@ -1,3 +1,17 @@
+.checkbox {
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.checkbox__item {
+  @media (min-width: $tablet-width) {
+    width: 167px;
+  }
+}
+
 .checkbox__item:not(:last-child) {
   margin-bottom: 44px;
 }

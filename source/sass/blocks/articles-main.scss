@@ -1,0 +1,61 @@
+.articles-main {
+  @include bg-image("hero-mobile@1x.jpg");
+  background-position: top center;
+  background-position-y: -16px;
+}
+
+.articles-main__title {
+  padding-bottom: 120px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+    padding-bottom: 372px;
+  }
+}
+
+.articles-main__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width - 1) {
+    width: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.articles-main__item {
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  &--decor {
+    background-color: $articles-menu-decor;
+  }
+
+  &--toys {
+    background-color: $articles-menu-toys;
+  }
+}
+
+.articles-main__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 30px;
+  max-width: 140px;
+  font-weight: bold;
+  font-size: 19px;
+  color: $bgcolor-white;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 34px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

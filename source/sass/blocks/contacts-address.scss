@@ -1,5 +1,13 @@
 .contacts-address {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
 }
 
 .contacts-address__wrapper {
@@ -12,17 +20,48 @@
 
 .contacts-address__title {
   flex-basis: 76px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
 }
 
 .contacts-address__descr {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: $contacts-elements-width;
+  }
 }
 
 .contacts-address__link {
   color: $text-color;
   border-bottom: 1px solid $articles-menu-decor;
+
+  @media (min-width: $desktop-width) {
+    overflow-wrap: anywhere;
+  }
 }
 
 .contacts-address__info {
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $contacts-elements-width;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    margin-left: $content-desktop-ml;
+  }
 }

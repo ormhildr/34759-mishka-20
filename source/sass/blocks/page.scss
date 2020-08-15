@@ -4,7 +4,6 @@
 
 .page__body {
   display: grid;
-  min-width: $mobile-width;
   min-height: 100%;
   margin: 0;
   grid-template-rows: min-content 1fr min-content;
@@ -13,4 +12,9 @@
   font-size: 15px;
   line-height: 24px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

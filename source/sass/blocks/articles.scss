@@ -1,0 +1,19 @@
+.articles {
+  padding-top: 73px;
+  background-color: $general-title-bgcolor;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}
+
+.articles__other {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: end;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

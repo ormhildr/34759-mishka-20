@@ -7,7 +7,14 @@
   width: 50%;
   height: 52px;
   background-color: $bgcolor-white;
-  border: 1px solid $box-shadow-nav;
+  border: $border-nav;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+  }
 
   &::after {
     position: absolute;
@@ -16,6 +23,11 @@
     height: 26px;
     left: 40px;
     top: 13px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 0;
+    }
   }
 
   &--prev {
@@ -23,6 +35,10 @@
 
     &::after {
       background-image: url("../img/icon-left-arrow.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-right: 37px;
     }
   }
 

@@ -1,13 +1,4 @@
 .page-header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 22px;
-  background-color: $bgcolor-white;
-  box-shadow: 0 1px 0 $box-shadow-nav, inset 0 1px 0 $box-shadow-nav;
-}
-
-.page-header__logo {
-  align-self: center;
-  margin-bottom: 22px;
+  border-top: $border-nav;
+  border-bottom: $border-nav;
 }
