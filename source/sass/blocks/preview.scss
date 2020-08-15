@@ -4,7 +4,7 @@
   margin-bottom: 58px;
   padding-top: 22px;
   padding-bottom: 33px;
-  border: 1px solid $box-shadow-nav;
+  border: $border-nav;
 
   @media (min-width: $desktop-width) {
     width: 367px;

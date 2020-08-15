@@ -1,8 +1,11 @@
 .main-nav {
-  border-top: $border-nav;
-  border-bottom: $border-nav;
+  @media (max-width: $tablet-width - 1) {
+    width: auto;
+    margin: 0;
+  }
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
   }
 }
@@ -27,14 +30,13 @@
   @media (min-width: $tablet-width) {
     &--first {
       position: absolute;
-      top: 112px;
-      left: 50px;
+      top: 125%;
       display: flex;
+      z-index: 1;
     }
 
     &--second {
       display: flex;
-      flex-grow: 1;
     }
   }
 
@@ -49,9 +51,9 @@
 
     &--third {
       position: absolute;
-      top: 112px;
-      left: 50px;
+      top: 125%;
       display: flex;
+      z-index: 1;
     }
   }
 }
@@ -67,7 +69,8 @@
     }
 
     &--cart {
-      flex-grow: 1;
+      width: 265px;
+      text-align: end;
     }
 
     &--first {
@@ -76,13 +79,18 @@
 
     &--first:not(:last-child) {
       margin-right: 37px;
+      box-shadow: none;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--first {
-      width: 234px;
-      box-shadow: inset 1px 0 0 #ececec;
+      width: 180px;
+      box-shadow: inset 1px 0 0 $box-shadow-nav;
+    }
+
+    &--first:not(:first-child) {
+      text-align: end;
     }
 
     &--first:not(:last-child) {
@@ -94,7 +102,7 @@
     }
 
     &--third:not(:last-child) {
-      margin-right: 37px;
+      margin-right: 48px;
     }
   }
 }
@@ -103,7 +111,7 @@
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
-  padding-left: 79px;
+  padding-left: 83px;
 
   @media (min-width: $tablet-width) {
     padding-top: 32px;
@@ -118,7 +126,6 @@
     &--first {
       padding-top: 32px;
       padding-bottom: 33px;
-      padding-left: 50px;
     }
 
     &--third {
@@ -134,12 +141,12 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
-    width: 370px;
     padding-top: 27px;
     padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: center;
     width: 270px;
     order: 1;
   }
@@ -150,7 +157,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-left: 50px;
   }
 }
 

@@ -12,8 +12,14 @@ $articles-menu-toys: #56c3b2;
 $modal-border:#c6c6c6;
 $modal-box-shadow: rgba(0, 1, 1, 0.25);
 
-$border-nav: 1px solid #ececec;
+$img-path: "../img/";
+
+$border-nav: 1px solid $box-shadow-nav;
 
 $mobile-width-only: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
+
+$contacts-elements-width: 291px;
+$content-desktop-ml: 174px;
+$form-tablet-pl: 200px;

@@ -11,7 +11,7 @@
 <body class="page__body">
 
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav container">
       <div class="main-nav__top">
         <a class="main-nav__logo">
           <img class="main-nav__img" src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
@@ -51,7 +51,7 @@
     <section class="articles articles-main">
       <p class="articles__other container">Бесплатная доставка по России</p>
       <h1 class="page-title articles-main__title container">Милые штуки ручной <br> работы для дома</h1>
-      <ul class="articles-main__list list">
+      <ul class="articles-main__list list container">
         <li class="articles-main__item articles-main__item--decor">
           <a class="articles-main__link" href="">Предметы интерьера</a>
         </li>
@@ -148,9 +148,11 @@
           </div>
         </dl>
       </div>
-      <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCQdnHs4SD" height="457" allowfullscreen
-        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </iframe>
+      <div class="contacts__map-inner container">
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCQdnHs4SD" height="457" allowfullscreen
+          title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </iframe>
+      </div>
       <div class="container">
         <a class="site-button contacts__button content-wrapper" href="">Нaпишите нам</a>
       </div>

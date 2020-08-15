@@ -1,5 +1,5 @@
 .content-wrapper {
   @media (min-width: $desktop-width) {
-    margin-left: 174px;
+    margin-left: $content-desktop-ml;
   }
 }

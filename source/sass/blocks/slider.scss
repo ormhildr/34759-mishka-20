@@ -7,7 +7,7 @@
   width: 50%;
   height: 52px;
   background-color: $bgcolor-white;
-  border: 1px solid $box-shadow-nav;
+  border: $border-nav;
 
   @media (min-width: $tablet-width) {
     width: 50px;

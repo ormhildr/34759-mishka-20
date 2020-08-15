@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 27px 28px;
-  border: 1px solid $box-shadow-nav;
+  border: $border-nav;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 22px;
-  border-top: 1px solid $box-shadow-nav;
+  border-top: $border-nav;
 
   @media (min-width: $tablet-width) {
     margin-top: auto;

@@ -13,7 +13,6 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 230px;
-    padding-right: 200px;
   }
 }
 
@@ -73,7 +72,7 @@
   padding-left: 63px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 200px;
+    padding-left: $form-tablet-pl;
   }
 
   @media (min-width: $desktop-width) {
@@ -114,7 +113,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-left: 200px;
+    padding-left: $form-tablet-pl;
   }
 
   @media (min-width: $desktop-width) {

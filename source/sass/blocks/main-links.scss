@@ -5,8 +5,6 @@
   color: $page-title-color;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-
     &--search {
       display: none;
     }
