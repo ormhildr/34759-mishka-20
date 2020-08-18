@@ -4,9 +4,36 @@
   line-height: 24px;
   color: $page-title-color;
 
+  svg {
+    position: absolute;
+    opacity: 0.2;
+  }
+
+  &--search {
+    svg {
+      top: 31px;
+      left: 34px;
+
+      @media (min-width: $tablet-width) {
+        top: 35px;
+      }
+    }
+  }
+
+  &--cart {
+    svg {
+      top: 30px;
+      left: 32px;
+
+      @media (min-width: $tablet-width) {
+        top: 33px;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     &--search {
-      display: none;
+      font-size: 0;
     }
 
     &--first {

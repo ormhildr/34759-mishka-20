@@ -1,40 +1,111 @@
 .advantages {
-  padding-top: 31px;
-  padding-bottom: 58px;
+  padding-top: 38px;
+  padding-bottom: 57px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 73px;
     padding-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 91px;
     padding-bottom: 90px;
   }
 }
 
 .advantages__title {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .advantages__list {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 612px;
   }
 }
 
 .advantages__item {
+  position: relative;
   padding-top: 83px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $page-title-color;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 38px;
+  }
+
+  &--ecologic {
+    &::before {
+      top: 27px;
+      left: 8px;
+
+      @include bg-image ("icon-feature-flower.svg");
+    }
+  }
+
+  &--style {
+    &::before {
+      top: 28px;
+      left: 0;
+
+      @include bg-image ("icon-feature-money.svg");
+    }
+  }
+
+  &--likes {
+    &::before {
+      top: 33px;
+      left: 7px;
+
+      @include bg-image ("icon-feature-heart.svg");
+    }
+  }
+
+  &--handmade {
+    &::before {
+      top: 30px;
+      left: 3px;
+
+      @include bg-image ("icon-feature-ball.svg");
+    }
+  }
+
+  &--support {
+    &::before {
+      top: 31px;
+      left: -6px;
+
+      @include bg-image ("icon-feature-rocket.svg");
+    }
+  }
+
+  &--package {
+    &::before {
+      top: 29px;
+      left: 3px;
+
+      @include bg-image ("icon-feature-gift.svg");
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    padding-bottom: 28px;
     width: 50%;
-    padding-top: 110px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
   }
 }
 

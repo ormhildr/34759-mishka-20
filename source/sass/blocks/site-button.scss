@@ -1,13 +1,17 @@
 .site-button {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   color: $text-color;
   background-color: $bgcolor-white;
   border: 2px solid $text-color;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }

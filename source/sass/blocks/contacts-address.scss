@@ -16,13 +16,17 @@
 
 .contacts-address__wrapper:first-child {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-address__title {
   flex-basis: 76px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 25px;
+    margin-right: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,12 +47,18 @@
   color: $text-color;
   border-bottom: 1px solid $articles-menu-decor;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
     overflow-wrap: anywhere;
   }
 }
 
 .contacts-address__info {
+  padding-left: 5px;
   font-style: normal;
 
   @media (min-width: $tablet-width) {
@@ -56,6 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 2px;
     width: $contacts-elements-width;
   }
 }

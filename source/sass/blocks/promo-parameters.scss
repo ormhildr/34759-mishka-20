@@ -1,8 +1,13 @@
 .promo-parameters__wrapper {
   display: flex;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 9px;
+  padding-bottom: 10px;
   border-bottom: $border-nav;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 6px;
+    padding-bottom: 13px;
+  }
 }
 
 .promo-parameters__item {

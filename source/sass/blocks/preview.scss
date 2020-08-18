@@ -17,9 +17,21 @@
 }
 
 .preview__title {
+  position: relative;
   margin: 0;
   margin-bottom: 27px;
-  padding-left: 91px;
+  padding-left: 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 33px;
+    width: 32px;
+    height: 32px;
+
+    @include bg-image("icon-video.svg");
+  }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
@@ -55,8 +67,8 @@
 }
 
 .preview__button {
-  margin-right: 34px;
-  margin-left: 34px;
+  margin-right: 33px;
+  margin-left: 33px;
 
   @media (min-width: $desktop-width) {
     margin-right: 0;

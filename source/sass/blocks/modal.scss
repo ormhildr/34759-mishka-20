@@ -1,5 +1,25 @@
 .modal {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  margin: auto;
   display: none;
-  border: 1px solid $modal-border;
+  background-color: $bgcolor-white;
   box-shadow: 0 5px 10px $modal-box-shadow;
+  border: 1px solid $modal-border;
+  z-index: 1;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+
+    .container {
+      width: 87%;
+    }
+  }
 }

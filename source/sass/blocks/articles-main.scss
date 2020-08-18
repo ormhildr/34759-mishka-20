@@ -11,6 +11,11 @@
     padding-top: 110px;
     padding-bottom: 372px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 113px;
+    padding-bottom: 356px;
+  }
 }
 
 .articles-main__list {
@@ -27,7 +32,14 @@
 }
 
 .articles-main__item {
+  position: relative;
   flex-grow: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    opacity: 0.2;
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -35,10 +47,35 @@
 
   &--decor {
     background-color: $articles-menu-decor;
+
+    &::after {
+      top: 24px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
+    }
   }
 
   &--toys {
     background-color: $articles-menu-toys;
+
+    &::after {
+      top: 22px;
+      right: 28px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/icon-toy.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 31px;
+        right: 34px;
+      }
+    }
   }
 }
 
