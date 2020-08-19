@@ -8,20 +8,34 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 61px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
   }
 }
 
 .reviews-item__author {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .reviews-item__name {
   display: block;
+  margin-bottom: 6px;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   color: $page-title-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews-item__nickname {

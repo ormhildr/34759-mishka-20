@@ -21,8 +21,8 @@
     content: "";
     width: 50px;
     height: 26px;
-    left: 40px;
-    top: 13px;
+    left: 37px;
+    top: 12px;
 
     @media (min-width: $tablet-width) {
       top: 0;
@@ -45,6 +45,10 @@
   &--next {
     &::after {
       background-image: url("../img/icon-right-arrow.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-right: 19px;
     }
   }
 }

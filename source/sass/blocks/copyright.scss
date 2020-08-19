@@ -5,6 +5,10 @@
   font-size: 19px;
   line-height: 22px;
   color: $page-title-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }
 
 .copyright__link {

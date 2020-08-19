@@ -1,7 +1,10 @@
 .catalog-item__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 27px 28px;
+  padding-top: 26px;
+  padding-right: 27px;
+  padding-bottom: 23px;
+  padding-left: 27px;
   border: $border-nav;
 
   @media (min-width: $tablet-width) {
@@ -48,7 +51,7 @@
 .catalog-item__bottom {
   display: flex;
   justify-content: space-between;
-  padding-top: 22px;
+  padding-top: 24px;
   border-top: $border-nav;
 
   @media (min-width: $tablet-width) {
