@@ -48,7 +48,8 @@
   }
 }
 
-.preview__video {
+.preview__video-wrapper {
+  position: relative;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -61,34 +62,25 @@
   }
 }
 
+.preview__video {
+  display: block;
+}
+
+.preview__video-play {
+  position: absolute;
+  top: 25%;
+  left: 31%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .preview__descr {
-  position: relative;
   margin: 0;
   margin-bottom: 41px;
   padding-left: 34px;
   font-size: 13px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -147px;
-    left: 79px;
-    width: 100px;
-    height: 77px;
-
-    @include bg-image ("icon-play.svg");
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      top: -198px;
-      left: 43%;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 0;
-      left: -180%;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
