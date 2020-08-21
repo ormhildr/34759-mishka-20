@@ -68,30 +68,56 @@
   }
 }
 
+.contacts__map-wrapper {
+  @media (max-width: $desktop-width - 1) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.contacts__map-inner {
+  height: 454px;
+  margin-bottom: 42px;
+
+  @include bg-image("map-mobile@1x.jpg");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+    background-image: url("../img/map-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+    bottom: -109px;
+    width: 527px;
+    height: 457px;
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+  }
+}
+
 .contacts__map {
-  margin-bottom: 29px;
   border: none;
 
   @media (max-width: $desktop-width - 1) {
     width: 100%;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
-  }
-
   @media (min-width: $desktop-width) {
-    position: absolute;
-    right: 0;
-    bottom: -98px;
     width: 527px;
-  }
-}
-
-.contacts__map-inner {
-  @media (max-width: $desktop-width - 1) {
-    width: auto;
-    margin: 0;
   }
 }
 
