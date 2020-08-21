@@ -18,7 +18,7 @@
 
   &::after {
     position: absolute;
-    content: "";
+    content: url("../img/icon-left-arrow.svg");
     width: 50px;
     height: 26px;
     left: 37px;
@@ -33,10 +33,6 @@
   &--prev {
     border-right: none;
 
-    &::after {
-      @include bg-image ("icon-left-arrow.svg");
-    }
-
     @media (min-width: $tablet-width) {
       margin-right: 37px;
     }
@@ -44,7 +40,7 @@
 
   &--next {
     &::after {
-      @include bg-image ("icon-right-arrow.svg");
+      transform: scale(-1, 1);
     }
 
     @media (min-width: $tablet-width) {
