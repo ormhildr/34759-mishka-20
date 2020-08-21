@@ -31,11 +31,11 @@
   width: 260px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 87%;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     width: 1050px;
   }
 }

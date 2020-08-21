@@ -88,7 +88,7 @@
   @media (min-width: $tablet-width) {
     &--first {
       position: absolute;
-      top: 123%;
+      top: calc(100% + 20px);
       display: flex;
       z-index: 1;
     }
@@ -169,9 +169,9 @@
 .main-nav__link {
   position: relative;
   display: block;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 27px;
-  padding-left: 83px;
+  padding-left: 76px;
 
   @media (min-width: $tablet-width) {
     padding-top: 32px;

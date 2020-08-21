@@ -31,14 +31,25 @@
     height: 32px;
 
     @include bg-image("icon-video.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -50px;
+      left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    width: 195px;
     padding-left: 0;
   }
 }
 
-.preview__video {
+.preview__video-wrapper {
+  position: relative;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -49,6 +60,20 @@
     position: absolute;
     left: 0;
   }
+}
+
+.preview__video {
+  display: block;
+}
+
+.preview__video-play {
+  position: absolute;
+  top: 25%;
+  left: 31%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .preview__descr {

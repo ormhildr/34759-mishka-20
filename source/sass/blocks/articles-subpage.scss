@@ -1,5 +1,14 @@
 .articles-subpage {
   padding-bottom: 73px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 97px;
+
+    &::after {
+      background-size: auto;
+      background-position-x: 0;
+    }
+  }
 }
 
 .articles-subpage__title {

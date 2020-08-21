@@ -2,3 +2,29 @@
   background-image: url("#{$img-path}/#{$img}");
   background-repeat: no-repeat;
 }
+
+@mixin zigzag {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-image: url("../img/bg-zigzag-line.svg");
+  height: 7px;
+  bottom: -7px;
+  background-size: $mobile-width-only;
+  background-repeat: repeat-x;
+
+  @media (min-width: $tablet-width) {
+    height: 17px;
+    bottom: -17px;
+    background-size: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    height: 22px;
+    bottom: -23px;
+    margin: 0 auto;
+    background-size: 1050px;
+  }
+}

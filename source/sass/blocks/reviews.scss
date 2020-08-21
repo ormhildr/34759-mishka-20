@@ -1,8 +1,20 @@
 .reviews {
+  position: relative;
   padding-bottom: 45px;
 
+  &::after {
+    @include zigzag;
+
+    @media (min-width: $tablet-width) {
+      bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -23px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    position: relative;
     padding-top: 54px;
     padding-bottom: 132px;
   }
@@ -31,15 +43,15 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
-    bottom: 140px;
+    bottom: -24px;
   }
 }
 
 .reviews__button {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 50px;
-    right: -1px;
+    top: 0;
+    right: 0;
     padding-right: 38px;
     padding-left: 38px;
   }
