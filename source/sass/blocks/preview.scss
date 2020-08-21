@@ -31,9 +31,19 @@
     height: 32px;
 
     @include bg-image("icon-video.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -50px;
+      left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    width: 195px;
     padding-left: 0;
   }
 }
@@ -52,10 +62,33 @@
 }
 
 .preview__descr {
+  position: relative;
   margin: 0;
   margin-bottom: 41px;
   padding-left: 34px;
   font-size: 13px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -147px;
+    left: 79px;
+    width: 100px;
+    height: 77px;
+
+    @include bg-image ("icon-play.svg");
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      top: -198px;
+      left: 43%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: -180%;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 15px;

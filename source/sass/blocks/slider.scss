@@ -34,7 +34,7 @@
     border-right: none;
 
     &::after {
-      background-image: url("../img/icon-left-arrow.svg");
+      @include bg-image ("icon-left-arrow.svg");
     }
 
     @media (min-width: $tablet-width) {
@@ -44,7 +44,7 @@
 
   &--next {
     &::after {
-      background-image: url("../img/icon-right-arrow.svg");
+      @include bg-image ("icon-right-arrow.svg");
     }
 
     @media (min-width: $tablet-width) {

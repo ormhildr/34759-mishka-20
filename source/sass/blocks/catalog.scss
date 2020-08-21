@@ -4,10 +4,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;
+    padding-top: 80px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 57px;
+    padding-top: 151px;
   }
 }
 
@@ -37,6 +39,10 @@
 
 .catalog__item:not(:last-child) {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;

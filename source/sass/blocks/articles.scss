@@ -3,7 +3,29 @@
   background-color: $general-title-bgcolor;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding-top: 18px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      height: 24px;
+      bottom: -13px;
+      background-size: $tablet-width;
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 34px;
+      bottom: -17px;
+      background-size: auto 37px;
+      background-position-x: 12px;
+    }
   }
 }
 

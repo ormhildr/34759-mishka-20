@@ -31,8 +31,3 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
-modal.addEventListener("click", function () {
-  event.stopPropagation();
-  modal.classList.remove("modal--active");
-})

@@ -3,6 +3,10 @@
   padding-top: 32px;
   padding-bottom: 36px;
 
+  &::after {
+    @include zigzag;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 53px;
     padding-bottom: 52px;
@@ -84,7 +88,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 72px;
+    top: 0;
     width: 525px;
     z-index: -1;
   }

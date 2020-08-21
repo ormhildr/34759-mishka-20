@@ -12,8 +12,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 381px;
-    font-size: 30px;
+    width: 100%;
+    font-size: 29px;
     line-height: 57px;
   }
 }
@@ -27,7 +27,7 @@
 
 .modal-cart__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 31px;
 }
 
@@ -36,4 +36,48 @@
   color: $bgcolor-white;
   background-color: $articles-menu-decor;
   border: none;
+}
+
+.modal-cart__item {
+  position: relative;
+  width: 82px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.modal-cart__label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.modal-cart__input + label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82px;
+    height: 52px;
+    border: 2px solid $text-color;
+    opacity: 0.1;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 112px;
+    }
+  }
+}
+
+.modal-cart__input:checked + label {
+  &::before {
+    border: 2px solid $articles-menu-decor;
+    opacity: 1;
+  }
 }
