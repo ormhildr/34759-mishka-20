@@ -17,6 +17,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 83px;
     padding-bottom: 132px;
+    width: 100%;
 
     @include bg-image("review@1x.jpg");
 
@@ -29,6 +30,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 79px;
     background-position-x: 50px;
+    width: $desktop-width;
   }
 }
 
