@@ -1,7 +1,31 @@
 .articles-main {
   @include bg-image("hero-mobile@1x.jpg");
   background-position: top center;
-  background-position-y: -16px;
+  background-size: auto 368px;
+  background-color: $index-page-color;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center;
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: auto 739px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+  }
 }
 
 .articles-main__title {
@@ -35,19 +59,34 @@
   position: relative;
   flex-grow: 1;
 
-  &::after {
-    content: "";
-    position: absolute;
-    opacity: 0.2;
-  }
-
   @media (min-width: $tablet-width) {
     width: 50%;
   }
 
   &--decor {
     background-color: $articles-menu-decor;
+  }
 
+  &--toys {
+    background-color: $articles-menu-toys;
+  }
+}
+
+.articles-main__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 30px;
+  font-weight: bold;
+  font-size: 19px;
+  color: $bgcolor-white;
+
+  &::after {
+    position: absolute;
+    opacity: 0.2;
+  }
+
+  &--decor {
     &::after {
       content: url("../img/icon-interior.svg");
       top: 24px;
@@ -60,8 +99,6 @@
   }
 
   &--toys {
-    background-color: $articles-menu-toys;
-
     &::after {
       content: url("../img/icon-toy.svg");
       top: 22px;
@@ -73,17 +110,11 @@
       }
     }
   }
-}
 
-.articles-main__link {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 31px;
-  padding-left: 30px;
-  max-width: 140px;
-  font-weight: bold;
-  font-size: 19px;
-  color: $bgcolor-white;
+  span {
+    display: inline-block;
+    width: 130px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 34px;

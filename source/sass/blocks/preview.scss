@@ -6,9 +6,16 @@
   padding-bottom: 33px;
   border: $border-nav;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+    padding-top: 0;
+    padding-bottom: 44px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 367px;
+    width: 370px;
     margin-left: auto;
+    margin-bottom: 104px;
     padding-top: 96px;
     padding-right: 46px;
     padding-bottom: 60px;
@@ -33,37 +40,54 @@
     @include bg-image("icon-video.svg");
 
     @media (min-width: $tablet-width) {
-      top: -5px;
+      top: -7px;
+      left: 41px;
     }
 
     @media (min-width: $desktop-width) {
-      top: -50px;
+      top: -55px;
       left: 0;
     }
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    padding-left: 105px;
+    font-size: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 195px;
+    margin-bottom: 27px;
     padding-left: 0;
   }
 }
 
 .preview__video-wrapper {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
     order: -1;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    top: 0;
     left: 0;
   }
 }
 
 .preview__video {
   display: block;
+  width: 100%;
+}
+
+.preview__video-img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .preview__video-play {
@@ -74,6 +98,11 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 41%;
+    left: 43%;
+  }
 }
 
 .preview__descr {
@@ -83,10 +112,14 @@
   font-size: 13px;
 
   @media (min-width: $tablet-width) {
+    padding-right: 30px;
+    padding-left: 40px;
     font-size: 15px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+    padding-right: 0;
     padding-left: 0;
   }
 }
@@ -95,8 +128,13 @@
   margin-right: 33px;
   margin-left: 33px;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 41px;
+    margin-left: 41px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    margin-right: 10px;
     margin-left: 0;
   }
 }
