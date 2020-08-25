@@ -28,3 +28,24 @@
     background-size: 1050px;
   }
 }
+
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin catalog-hover {
+  &:hover {
+    box-shadow: 0 6px 10px rgba($page-title-color, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($page-title-color, 0.1);
+  }
+}

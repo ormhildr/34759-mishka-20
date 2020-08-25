@@ -1,0 +1,13 @@
+.svg-links {
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: $bgcolor-articles-lighter;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

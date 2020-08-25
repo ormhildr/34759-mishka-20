@@ -35,7 +35,7 @@
 }
 
 .form__fieldset {
-  border-top: 1px solid $articles-menu-decor;
+  border-top: 1px solid $bgcolor-articles-lighter;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -131,7 +131,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
-  color: $articles-menu-decor;
+  color: $bgcolor-articles-lighter;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -145,6 +145,22 @@
 
 .form__input {
   background-color: transparent;
+}
+
+.form__input-svg {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    top: 14px;
+    right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 6px;
+  }
 }
 
 .form__input-radio + .form__label {
@@ -167,6 +183,19 @@
   }
 }
 
+.form__input:hover + .form__label,
+.form__input:focus + .form__label {
+  &::before {
+    border: 2px solid $bgcolor-articles-lighter;
+  }
+}
+
+.form__input:active + .form__label {
+  &::before {
+    border: 2px solid rgba($page-title-color, 0.3);
+  }
+}
+
 .form__input-radio:checked + .form__label {
   &::after {
     content: "";
@@ -175,7 +204,7 @@
     left: -48px;
     width: 15px;
     height: 15px;
-    background-color: $articles-menu-decor;
+    background-color: $bgcolor-articles-lighter;
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
@@ -257,22 +286,6 @@
     opacity: 0.3;
   }
 
-  svg {
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    opacity: 0.3;
-
-    @media (min-width: $tablet-width) {
-      top: 14px;
-      right: 25px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 6px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
     padding-left: 165px;
@@ -288,7 +301,18 @@
   padding-top: 17px;
   padding-bottom: 16px;
   border: none;
+  outline: none;
   box-shadow: inset 0 -2px 0 $page-title-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -2px 0 $bgcolor-articles-lighter;
+
+    + .form__input-svg {
+      fill: $bgcolor-articles-lighter;
+      opacity: 1;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 18px;
@@ -323,7 +347,13 @@
   padding: 16px 15px;
   line-height: 18px;
   font-size: 18px;
+  outline: none;
   border: 2px solid $text-color;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $bgcolor-articles-lighter;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

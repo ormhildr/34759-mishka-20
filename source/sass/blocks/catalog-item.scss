@@ -1,9 +1,13 @@
+.catalog-item {
+  @include catalog-hover;
+}
+
 .catalog-item__wrapper {
   display: flex;
   flex-direction: column;
   padding-top: 26px;
   padding-right: 27px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   padding-left: 27px;
   border: $border-nav;
 
@@ -24,6 +28,8 @@
 .catalog-item__title {
   display: inline-block;
   margin-bottom: 6px;
+
+  @include hover-focus;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

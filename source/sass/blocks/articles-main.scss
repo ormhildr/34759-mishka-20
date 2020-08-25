@@ -59,16 +59,47 @@
   position: relative;
   flex-grow: 1;
 
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+    transition: 0.6s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+      left: 0;
+      height: 5px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 50%;
   }
 
   &--decor {
-    background-color: $articles-menu-decor;
+    background-color: $bgcolor-articles-lighter;
+
+    &:hover {
+      background-color: $bgcolor-articles-lighter-hover;
+
+      &::before {
+        background-color: $bgcolor-articles-lighter-hover;
+      }
+    }
   }
 
   &--toys {
-    background-color: $articles-menu-toys;
+    background-color: $bgcolor-toys-darker;
+
+    &:hover {
+      background-color: $bgcolor-toys-darker-hover;
+
+      &::before {
+        background-color: $bgcolor-toys-darker-hover;
+      }
+    }
   }
 }
 
@@ -84,6 +115,19 @@
   &::after {
     position: absolute;
     opacity: 0.2;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
   }
 
   &--decor {
