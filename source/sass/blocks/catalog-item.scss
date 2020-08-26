@@ -59,6 +59,22 @@
   }
 }
 
+.catalog-item__cart {
+  &:hover,
+  &:focus {
+    svg {
+      fill: $bgcolor-articles-lighter;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
 .catalog-item__top {
   padding-bottom: 17px;
 

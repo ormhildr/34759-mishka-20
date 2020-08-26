@@ -68,17 +68,23 @@
   }
 }
 
-.page-footer__link-svg {
-  &--academy {
-    fill: $bgcolor-articles-lighter;
-  }
-
+.page-footer__link {
   &:hover,
   &:focus {
-    fill: $bgcolor-toys-darker-hover;
+    .page-footer__link-svg {
+      fill: $bgcolor-toys-darker-hover;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    .page-footer__link-svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-footer__link-svg {
+  &--academy {
+    fill: $bgcolor-articles-lighter;
   }
 }
