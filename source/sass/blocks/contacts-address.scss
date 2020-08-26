@@ -45,7 +45,7 @@
 
 .contacts-address__link {
   color: $text-color;
-  border-bottom: 1px solid $articles-menu-decor;
+  border-bottom: 1px solid $bgcolor-articles-lighter;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
@@ -54,6 +54,15 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 8px;
     overflow-wrap: anywhere;
+  }
+
+  &:hover,
+  &:focus {
+    color: $bgcolor-toys-darker-hover;
+  }
+
+  &:active {
+    border-bottom: 1px solid rgba($bgcolor-toys-darker-hover, 0.1);
   }
 }
 

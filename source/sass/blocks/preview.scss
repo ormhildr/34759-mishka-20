@@ -18,7 +18,7 @@
     margin-bottom: 104px;
     padding-top: 96px;
     padding-right: 46px;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
     padding-left: 80px;
   }
 }
@@ -85,6 +85,8 @@
 }
 
 .preview__video-img {
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
@@ -103,12 +105,26 @@
     top: 41%;
     left: 43%;
   }
+
+  @media (min-width: $desktop-width) {
+    transition: 0.6s;
+
+    &:hover {
+      transition: 0.6s;
+      transform: scale(1.2);
+    }
+
+    &:active {
+      opacity: 0.9;
+      transform: scale(0.8);
+    }
+  }
 }
 
 .preview__descr {
   margin: 0;
   margin-bottom: 41px;
-  padding-left: 34px;
+  padding-left: 33px;
   font-size: 13px;
 
   @media (min-width: $tablet-width) {

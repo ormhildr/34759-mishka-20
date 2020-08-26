@@ -34,7 +34,7 @@
 .modal-cart__button {
   line-height: 16px;
   color: $bgcolor-white;
-  background-color: $articles-menu-decor;
+  background-color: $bgcolor-articles-lighter;
   border: none;
 }
 
@@ -45,6 +45,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    .modal-cart__input:not(:checked) + label {
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 112px;
@@ -77,7 +85,7 @@
 
 .modal-cart__input:checked + label {
   &::before {
-    border: 2px solid $articles-menu-decor;
+    border: 2px solid $bgcolor-articles-lighter;
     opacity: 1;
   }
 }
