@@ -15,6 +15,7 @@ navToggle.addEventListener("click", function () {
 
 var btnBuy = document.querySelectorAll(".button-buy");
 var modal = document.querySelector(".modal");
+var modalOverlay = document.querySelector(".modal__overlay");
 
 Array.from(btnBuy).forEach(linkbuy => {
   linkbuy.addEventListener("click", function (evt) {
@@ -31,3 +32,9 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+modalOverlay.addEventListener("click", function () {
+  if (modal.classList.contains("modal--active")) {
+    modal.classList.remove("modal--active");
+  }
+})

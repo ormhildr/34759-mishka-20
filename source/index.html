@@ -307,28 +307,31 @@
   </footer>
 
   <section class="modal">
-    <h2 class="visually-hidden">Форма добавления товара в корзину</h2>
-    <form class="modal__form modal-cart container" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="fieldset modal-cart__cart">
-        <legend class="modal-cart__title site-title">Добавить в корзину</legend>
-        <p class="modal-cart__descr">Выберите размер:</p>
-        <ul class="modal-cart__list list">
-          <li class="modal-cart__item">
-            <input class="visually-hidden input-radio modal-cart__input" type="radio" name="size" id="size_s" checked>
-            <label class="modal-cart__label" for="size_s">S</label>
-          </li>
-          <li class="modal-cart__item">
-            <input class="visually-hidden input-radio modal-cart__input" type="radio" name="size" id="size_m">
-            <label class="modal-cart__label" for="size_m">M</label>
-          </li>
-          <li class="modal-cart__item">
-            <input class="visually-hidden input-radio modal-cart__input" type="radio" name="size" id="size_l">
-            <label class="modal-cart__label" for="size_l">L</label>
-          </li>
-        </ul>
-      </fieldset>
-      <button class="site-button modal-cart__button" type="submit">Добавить</button>
-    </form>
+    <div class="modal__content">
+      <h2 class="visually-hidden">Форма добавления товара в корзину</h2>
+      <form class="modal__form modal-cart container" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="fieldset modal-cart__cart">
+          <legend class="modal-cart__title site-title">Добавить в корзину</legend>
+          <p class="modal-cart__descr">Выберите размер:</p>
+          <ul class="modal-cart__list list">
+            <li class="modal-cart__item">
+              <input class="visually-hidden input-radio modal-cart__input" type="radio" name="size" id="size_s" checked>
+              <label class="modal-cart__label" for="size_s">S</label>
+            </li>
+            <li class="modal-cart__item">
+              <input class="visually-hidden input-radio modal-cart__input" type="radio" name="size" id="size_m">
+              <label class="modal-cart__label" for="size_m">M</label>
+            </li>
+            <li class="modal-cart__item">
+              <input class="visually-hidden input-radio modal-cart__input" type="radio" name="size" id="size_l">
+              <label class="modal-cart__label" for="size_l">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="site-button modal-cart__button" type="submit">Добавить</button>
+      </form>
+    </div>
+    <div class="modal__overlay"></div>
   </section>
 
   <script src="js/scripts.min.js"></script>
