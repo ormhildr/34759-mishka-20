@@ -107,10 +107,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    transition: 0.6s;
+    transition: transform 0.6s;
 
     &:hover {
-      transition: 0.6s;
       transform: scale(1.2);
     }
 

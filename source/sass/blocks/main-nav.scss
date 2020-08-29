@@ -27,25 +27,23 @@
 
   &--opened {
     .main-nav__toggle {
-      height: 20px;
-
       &::before,
       &::after {
-        content: "";
-        position: absolute;
         top: 9px;
         left: -1px;
         width: 23px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
         height: 2px;
         background-color: $page-title-color;
+        transform: rotate(-45deg);
       }
 
       &::before {
         transform: rotate(45deg);
-      }
-
-      &::after {
-        transform: rotate(-45deg);
       }
     }
   }
@@ -73,7 +71,8 @@
     width: 20px;
     height: 2px;
     background-color: $page-title-color;
-    transition: all 0.3s;
+    transition-property: transform, box-shadow, top;
+    transition-duration: 0.3s;
   }
 
   @media (min-width: $tablet-width) {
