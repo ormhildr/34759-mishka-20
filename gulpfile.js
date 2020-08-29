@@ -10,6 +10,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const uglify = require("gulp-uglify-es").default;
+const htmlmin = require("gulp-htmlmin");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -22,14 +24,27 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+//JS
+
+const js = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("scripts.min.js"))
+    .pipe(gulp.dest("build/js"));
+}
+
+exports.js = js;
 
 // Images
 
@@ -93,6 +108,7 @@ exports.clean = clean;
 
 const html = () => {
   return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 };
 
@@ -104,6 +120,7 @@ const build = gulp.series(
   clean,
   copy,
   styles,
+  js,
   sprite,
   html
 );
