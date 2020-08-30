@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ab8945e0-c99a-4834-b72c-ac5ea623579c&lang=ru_RU"
+    type="text/javascript">
+    </script>
 </head>
 
 <body class="page__body">
@@ -244,10 +247,8 @@
         </dl>
       </div>
       <div class="contacts__map-wrapper container">
-        <div class="contacts__map-inner">
-          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCQdnHs4SD" height="457" allowfullscreen
-            title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          </iframe>
+        <div class="contacts__map" id="map"
+          aria-label="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </div>
       </div>
       <div class="container">
