@@ -78,6 +78,7 @@
 .contacts__map {
   height: 454px;
   margin-bottom: 42px;
+  z-index: 1;
 
   @include bg-image("map-mobile@1x.jpg");
   background-size: cover;
