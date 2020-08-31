@@ -30,6 +30,8 @@
 }
 
 @mixin hover-focus {
+  transition: $transition-opacity;
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -41,6 +43,8 @@
 }
 
 @mixin catalog-hover {
+  transition: $transition-shadow;
+
   &:hover {
     box-shadow: 0 6px 10px rgba($page-title-color, 0.1);
   }

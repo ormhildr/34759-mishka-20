@@ -1,4 +1,9 @@
 .page-header {
   border-top: $border-nav;
   border-bottom: $border-nav;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 1px;
+    border-top: none;
+  }
 }

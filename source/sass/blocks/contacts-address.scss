@@ -35,7 +35,7 @@
   }
 }
 
-.contacts-address__descr {
+.contacts-address__description {
   margin: 0;
 
   @media (min-width: $desktop-width) {
@@ -46,6 +46,7 @@
 .contacts-address__link {
   color: $text-color;
   border-bottom: 1px solid $bgcolor-articles-lighter;
+  transition: $transition-color;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;

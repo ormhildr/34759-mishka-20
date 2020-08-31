@@ -1,6 +1,7 @@
 .reviews {
   position: relative;
   padding-bottom: 45px;
+  width: 100%;
 
   &::after {
     @include zigzag;
@@ -17,7 +18,6 @@
   @media (min-width: $tablet-width) {
     padding-top: 83px;
     padding-bottom: 132px;
-    width: 100%;
 
     @include bg-image("review@1x.jpg");
 

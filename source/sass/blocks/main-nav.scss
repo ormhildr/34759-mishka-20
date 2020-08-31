@@ -52,6 +52,12 @@
     .main-nav__toggle {
       display: none;
     }
+
+    @media (max-width: $tablet-width - 1) {
+      .main-nav__list:not(.main-nav__list--third) {
+        display: block;
+      }
+    }
   }
 }
 
@@ -195,6 +201,8 @@
 }
 
 .main-nav__links {
+  transition: $transition-color;
+
   &:hover,
   &:focus {
     color: rgba($page-title-color, 0.6);

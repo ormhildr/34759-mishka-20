@@ -17,6 +17,14 @@ $img-path: "../img/";
 
 $border-nav: 1px solid $box-shadow-nav;
 
+$transition-duration: 0.2s;
+
+$transition-color: color $transition-duration;
+$transition-opacity: opacity $transition-duration;
+$transition-fill: fill $transition-duration;
+$transition-shadow: box-shadow $transition-duration;
+$transition-border: border $transition-duration;
+
 $mobile-width-only: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;

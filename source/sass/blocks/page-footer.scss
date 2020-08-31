@@ -14,17 +14,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 141px;
-  margin-bottom: 21px;
+  margin-bottom: 27px;
   margin-left: 58px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-right: 121px;
-  }
-
-  @media (min-width: $desktop-width) {
-    align-items: flex-end;
   }
 }
 
@@ -84,6 +80,8 @@
 }
 
 .page-footer__link-svg {
+  transition: $transition-fill;
+
   &--academy {
     fill: $bgcolor-articles-lighter;
   }
