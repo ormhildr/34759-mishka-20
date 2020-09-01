@@ -70,7 +70,7 @@
 
 .contacts__map-wrapper {
   @media (max-width: $desktop-width - 1) {
-    width: auto;
+    width: 100vw;
     margin: 0;
   }
 }
