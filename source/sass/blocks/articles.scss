@@ -28,14 +28,3 @@
     }
   }
 }
-
-.articles__other {
-  display: none;
-  font-size: 15px;
-  line-height: 24px;
-  text-align: end;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}

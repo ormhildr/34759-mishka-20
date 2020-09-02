@@ -46,6 +46,10 @@
 .page-footer__logo {
   display: none;
 
+  &--active {
+    pointer-events: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
     width: 102px;

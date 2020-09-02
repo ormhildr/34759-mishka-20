@@ -11,12 +11,10 @@
 }
 
 .checkbox__item {
-  &:not(:last-child) {
-    margin-bottom: 43px;
+  margin-bottom: 43px;
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 58px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
   }
 
   @media (min-width: $tablet-width) {
@@ -26,9 +24,8 @@
   @media (min-width: $desktop-width) {
     width: 20%;
 
-
     &:not(:nth-child(3n+3)) {
-      margin-right: 129px;
+      margin-right: 104px;
     }
   }
 }

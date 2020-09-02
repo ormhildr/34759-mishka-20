@@ -1,9 +1,32 @@
 .page-header {
+  position: relative;
   border-top: $border-nav;
   border-bottom: $border-nav;
 
   @media (min-width: $tablet-width) {
     padding-top: 1px;
     border-top: none;
+  }
+}
+
+.page-header__container {
+  @media (max-width: $tablet-width - 1) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.page-header__other {
+  display: none;
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    bottom: -43px;
+    display: block;
+    z-index: 1;
   }
 }

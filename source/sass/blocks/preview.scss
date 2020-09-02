@@ -1,4 +1,10 @@
 .preview {
+  @media (min-width: $desktop-width) {
+    @include catalog-hover;
+  }
+}
+
+.preview__inner {
   display: flex;
   flex-direction: column;
   margin-bottom: 58px;
@@ -76,6 +82,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
   }
 }
 
@@ -90,6 +97,10 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
 }
 
 .preview__video-play {
@@ -102,7 +113,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: 41%;
+    top: 42%;
     left: 43%;
   }
 
