@@ -20,7 +20,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 121px;
+    margin-right: 118px;
+    padding-bottom: 9px;
   }
 }
 
@@ -39,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-items: center;
+    align-items: end;
   }
 }
 
@@ -57,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 197px;
+    margin-right: 118px;
   }
 }
 
